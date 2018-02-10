@@ -8,4 +8,8 @@ class InPlainSiteApp < Sinatra::Base
   get '/nav' do
     erb :nav, locals: { css: 'nav.css' }
   end
+
+  get '/workshop_nav' do
+    erb :workshop_nav, locals: { css: 'workshop_nav.css' }
+  end
 end
