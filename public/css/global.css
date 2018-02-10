@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Bold.ttf')  format('truetype')
+}
+
+.rwBold {
+  font-family: Raleway, sans-serif;
+}
+
+body {
+  background-color: #00D0CD;
+  color: blue;
+}
