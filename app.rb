@@ -19,7 +19,6 @@ class InPlainSiteApp < Sinatra::Base
   end
 
   get '/report_issue' do
-    puts params.inspect
     erb :report_issue, locals: { css: 'report_issue.css', failed: params['failed'] }
   end
 
@@ -29,6 +28,7 @@ class InPlainSiteApp < Sinatra::Base
       redirect '/report_issue?failed=false'
     rescue => e
       puts e.message
+      puts e.backtrace
       redirect '/report_issue?failed=true'
     end
   end
