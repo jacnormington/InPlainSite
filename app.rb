@@ -26,9 +26,9 @@ class InPlainSiteApp < Sinatra::Base
   post '/report_issue' do
     begin
       ReportIssueEmailer.new(params['body']).send_email
-      redirect '/report_issue?failed=success'
+      redirect '/report_issue?failed=false'
     rescue => e
-        puts e.message
+      puts e.message
       redirect '/report_issue?failed=true'
     end
   end
