@@ -1,0 +1,13 @@
+body{
+  background-color: #F0F0F0;
+}
+
+label{
+  color: #55595C
+}
+
+.form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
