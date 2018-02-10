@@ -1,0 +1,47 @@
+body  {
+  background: linear-gradient(to right, white 0%,white 50%,#00D0CD 50%, #00D0CD 50%, #00D0CD 100%);
+}
+
+.navLink {
+  color: #55595C;
+  text-decoration:none;
+  background-color: white;
+  display:inline-block;
+  width:180px;
+}
+
+.darkRoom {
+  border-bottom:5px solid #1C252C;
+}
+
+.printStudio {
+  border-bottom:5px solid #00C0D6;
+}
+
+.woodWorkshop {
+  border-bottom:5px solid #FEB700;
+}
+
+.castingStudio {
+  border-bottom:5px solid #CFC2B9;
+}
+
+.immersiveLab {
+  border-bottom:5px solid #C2E86A;
+}
+
+.risoStudio {
+  border-bottom:5px solid #FC3249;
+}
+
+.largePrinting {
+  border-bottom:5px solid #FF6B00;
+}
+
+.shootStudio {
+  border-bottom:5px solid #8B1A9B;
+}
+
+.extraSupport {
+  border-bottom:5px solid #00D0CD;
+}
