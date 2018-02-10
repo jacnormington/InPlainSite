@@ -10,8 +10,12 @@ class InPlainSiteApp < Sinatra::Base
     erb :nav, locals: { css: 'nav.css' }
   end
 
-  get '/workshop_nav' do
-    erb :workshop_nav, locals: { css: 'workshop_nav.css' }
+  get '/workshop' do
+    erb :workshop, locals: { css: 'workshop.css' }
+  end
+
+  get '/workshop/technicians' do
+    erb :workshop_technicians, locals: { css: 'workshop_technicians.css' }
   end
 
   get '/report_issue' do
@@ -24,8 +28,8 @@ class InPlainSiteApp < Sinatra::Base
       ReportIssueEmailer.new(params['body']).send_email
       redirect '/report_issue?failed=success'
     rescue => e
+        puts e.message
       redirect '/report_issue?failed=true'
-      puts "Failed to send email"
     end
   end
 end
