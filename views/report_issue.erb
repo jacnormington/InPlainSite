@@ -1,0 +1,30 @@
+<div class="row justify-content-center">
+  <div class="col-9 mt-5">
+    <h3 class="greyText text-center">Report a problem</h3>
+    <p class="rwBold greyText mt-5">
+      If theres a problem, let us know and we’ll get it fixed as soon as possible.
+      Report issues with faulty and missing equipment.
+    </p>
+    <% if defined?(failed) %>
+      <% if failed == "true" %>
+        <div class="alert alert-danger mt-3">
+          <strong>Failed to submit report. Please try later</strong>.
+        </div>
+      <% elsif failed == "false" %>
+        <div class="alert alert-success mt-3">
+          <strong>Successfully filed report</strong>.
+        </div>
+      <% end %>
+
+    <% end %>
+    <form class="mt-5" action="/report_issue" method="post" >
+        <div class="form-group">
+          <p class="rwBold greyText text-center">Tell us the problem</p>
+          <textarea class="form-control" id="body" name="body" rows="6"></textarea>
+          <div class="form-actions mt-2">
+            <button class="btn btn-warning" type="submit" value="Submit">Submit</button>
+          </div>
+        </div>
+    </form>
+  </div>
+</div>

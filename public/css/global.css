@@ -16,6 +16,14 @@ body {
   color: white;
 }
 
+.greyText {
+  color: #55595C;
+}
+
 .blueBg {
   background-color: #00D0CD;
+}
+
+.orangeBg {
+  background-color: #FEB700;
 }
